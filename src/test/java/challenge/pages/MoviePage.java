@@ -1,5 +1,6 @@
 package challenge.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,21 +20,25 @@ public class MoviePage extends BasePage{
         super(driver);
     }
 
+    @Step("Validates if the movie has Action in its genres.")
     public Boolean isActionMovie(){
         List<WebElement> genres = driver.findElements(genresBy);
         for (WebElement g : genres) if (g.getText().equals("Action")) return true;
         return false;
     }
 
+    @Step("Reads content of movie title.")
     public String readMovieTitleToCompare(){
         return driver.findElement(movieTitleBy).getText();
     }
 
+    @Step("Implicitly waiting")
     public MoviePage waitImplicit(){
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         return new MoviePage(driver);
     }
 
+    @Step("Selects and actor from the top billed cast.")
     public ActorPage selectAnActor(){
         Random rand = new Random();
         List<WebElement> cast = driver.findElements(castBy);

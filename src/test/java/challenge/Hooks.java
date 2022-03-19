@@ -12,7 +12,7 @@ public class Hooks {
 
     protected WebDriver driver;
     protected String url = "https://www.themoviedb.org/";
-    public static final Logger logger = LogManager.getLogger(Runner.class);
+    public static final Logger logger = LogManager.getLogger(Tests.class);
 
 
     @BeforeMethod

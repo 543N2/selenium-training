@@ -1,5 +1,6 @@
 package challenge.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -20,21 +21,25 @@ public class LandingPage extends BasePage{
         super(driver);
     }
 
+    @Step("Clicks login button on home page.")
     public LoginPage clickLoginButton(){
         driver.findElement(loginMainBy).click();
         return new LoginPage(driver);
     }
 
+    @Step("Clicks search icon button on the top right of home page.")
     public LandingPage clickSearchIconButton(){
         driver.findElement(searchButtonBy).click();
         return new LandingPage(driver);
     }
 
+    @Step("Types the movie title: {0} into the search bar and press Enter key.")
     public CatalogPage typeMovieTitleAndSend(String movieTitle){
         driver.findElement(searchBarBy).sendKeys(movieTitle + Keys.RETURN);
         return new CatalogPage(driver);
     }
 
+    @Step("Hovers the movies option in the header.")
     public LandingPage hoverMoviesLink(){
         WebElement moviesLink = driver.findElement(moviesLinkBy);
         Actions action = new Actions(driver);
@@ -42,11 +47,13 @@ public class LandingPage extends BasePage{
         return new LandingPage(driver);
     }
 
+    @Step("Click the Top-Rated movies option.")
     public CatalogPage clickTopRatedOption(){
         driver.findElement(topRatedButtonBy).click();
         return new CatalogPage(driver);
     }
 
+    @Step("Clicks Now-playing movies option.")
     public CatalogPage clickNowPlayingOption(){
         driver.findElement(nowPlayingButtonBy).click();
         return new CatalogPage(driver);

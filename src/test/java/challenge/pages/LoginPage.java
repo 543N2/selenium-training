@@ -1,6 +1,7 @@
 package challenge.pages;
 
 import challenge.User;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -23,58 +24,55 @@ public class LoginPage extends BasePage {
 
     public String username() { return username; }
 
-    public String password() { return password; }
-
-    public By usernameInputBy() { return usernameInputBy; }
-
-    public By passwordInputBy() { return passwordInputBy; }
-
-    public String fakeUsername() { return fakeUsername; }
-
-    public String fakePassword() { return fakePassword; }
-
-    public By loginButtonBy() { return loginButtonBy; }
-
     public String redColor(){ return redColor; }
 
+    @Step("Types username.")
     public LoginPage typeUsername(){
         driver.findElement(usernameInputBy).sendKeys(username);
         return new LoginPage(driver);
     }
 
+    @Step("Types username.")
     public LoginPage typeFakeUsername(){
         driver.findElement(usernameInputBy).sendKeys(fakeUsername);
         return new LoginPage(driver);
     }
 
+    @Step("Types username.")
     public LoginPage typePassword(){
         driver.findElement(passwordInputBy).sendKeys(password);
         return new LoginPage(driver);
     }
 
+    @Step("Types username.")
     public LoginPage typeFakePassword(){
         driver.findElement(passwordInputBy).sendKeys(fakePassword);
         return new LoginPage(driver);
     }
 
+    @Step("Reads the background color of the error text box.")
     public String readBoxColor(){
         return driver.findElement(redErrorBoxBy).getCssValue("background-color");
     }
 
+    @Step("Clicks login button.")
     public UserPage clickLoginButton(){
         driver.findElement(loginButtonBy).click();
         return new UserPage(driver);
     }
 
+    @Step("Read contents of red error message..")
     public String readErrorMessage(){
         return driver.findElement(redErrorMessageBy).getText().replace("&nbsp;","");
     }
 
+    @Step("Clicks login button expecting to fail.")
     public LoginPage clickLoginButtonToFail(){
         driver.findElement(loginButtonBy).click();
         return new LoginPage(driver);
     }
 
+    @Step("Counts number of error messages.")
     public Boolean numberOfMessages() {
         if(driver.findElements(twoErrorMessagesBy).size() == 2)
             return true;

@@ -1,5 +1,6 @@
 package challenge.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +14,7 @@ public class ActorPage extends BasePage {
         super(driver);
     }
 
+    @Step("Checks timeline.")
     public Boolean checkTimeline(String movieTitle){
         List<WebElement> actingTimeline = driver.findElements(actingTimelineBy);
         for(WebElement element : actingTimeline)

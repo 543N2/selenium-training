@@ -1,15 +1,19 @@
 package challenge;
 
 import challenge.pages.*;
+import io.qameta.allure.Description;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-public class Runner extends Hooks {
+//@Listeners({TestListener.class})
+public class Tests extends Hooks {
 
 
-    @Test
+    @Test(priority=0, description = "Successful login with username and password")
+    @Description("Test description: Login test with valid username and password.")
     public void successfulLogin(){
-        logger.info("sucessfulLogin Test started.");
+        logger.info("successfulLogin Test started.");
         LandingPage landing = new LandingPage(driver);
         LoginPage login = landing
                 .clickLoginButton();
@@ -18,10 +22,11 @@ public class Runner extends Hooks {
                 .typePassword()
                 .clickLoginButton();
         Assert.assertEquals( login.username(), user.readUsername());
-        logger.info("sucessfulLogin Test ended.");
+        logger.info("successfulLogin Test ended.");
     }
 
-    @Test
+    @Test(priority=0, description = "Failed login with both fake username and password")
+    @Description("Test description: Login test with invalid username and password.")
     public void failedLogin(){
         logger.info("failedLogin Test started.");
 
@@ -46,9 +51,10 @@ public class Runner extends Hooks {
 
     }
 
-    @Test
+    @Test(priority=0, description = "Successful search of a movie")
+    @Description("Test description: Search test of a given movie title using the search bar.")
     public void successfulSearch(){
-        logger.info("sucessfulSearch Test started.");
+        logger.info("successfulSearch Test started.");
 
         String expectedMovie = "Fight Club";
 
@@ -64,12 +70,13 @@ public class Runner extends Hooks {
 
         Assert.assertEquals(movieTitle,expectedMovie);
 
-        logger.info("sucessfulSearch Test ended.");
+        logger.info("successfulSearch Test ended.");
 
     }
 
-    @Test
-    public void verifyMovieGenreFilter() throws InterruptedException {
+    @Test(priority=0, description = "Filter test by movie genre")
+    @Description("Test description: Movie filter test given the movie genre.")
+    public void verifyMovieGenreFilter() {
         logger.info("verifyMovieGenreFilter Test started.");
 
         LandingPage landing = new LandingPage(driver);
@@ -97,7 +104,8 @@ public class Runner extends Hooks {
     }
 
 
-    @Test
+    @Test(priority=0, description = "Acting timeline validation")
+    @Description("Test description: Validates a chosen movie is in the actor's timeline")
     public void validateActingTimeline(){
         logger.info("validateActingTimeline Test started.");
 
@@ -125,7 +133,8 @@ public class Runner extends Hooks {
 
     }
 
-    @Test
+    @Test(priority=0, description = " Sorting test by ascending movie date")
+    @Description("Test description: Validates movies are shown in ascending order of release date.")
     public void sortByDatesOnAscendingOrder(){
         logger.info("sortByDatesOnAscendingOrder Test started.");
 

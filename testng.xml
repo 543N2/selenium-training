@@ -4,7 +4,7 @@
 <suite name="Demo Suite" parallel="tests" thread-count="1">
     <test name="Demo Folder" group-by-instances="true" >
         <classes>
-            <class name="challenge.Runner" />
+            <class name="challenge.Tests" />
         </classes>
     </test>
 </suite>

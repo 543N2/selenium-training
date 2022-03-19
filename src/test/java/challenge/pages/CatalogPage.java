@@ -1,5 +1,6 @@
 package challenge.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,49 +27,58 @@ public class CatalogPage extends BasePage {
         super(driver);
     }
 
+    @Step("Waits for results.")
     public CatalogPage waitForResults(){
         WebDriverWait waitResults = new WebDriverWait(driver, 5);
         waitResults.until(ExpectedConditions.numberOfElementsToBeMoreThan(searchResultsBy,1));
         return new CatalogPage(driver);
     }
 
+    @Step("Reads movie title.")
     public String readMovieTitle(){
         return driver.findElements(searchResultsBy).get(0).getText();
     }
 
+    @Step("Clicks filter button.")
     public CatalogPage clickFiltersButton(){
         driver.findElements(filtersButtonBy).get(1).click();
         return new CatalogPage(driver);
     }
 
+    @Step("Clicks action button.")
     public CatalogPage clickActionButton(){
         driver.findElement(actionButtonBy).click();
         return new CatalogPage(driver);
     }
 
+    @Step("Clicks search button.")
     public CatalogPage clickSearchButton(){
         driver.findElement(searchButtonBy).click();
         return new CatalogPage(driver);
     }
 
+    @Step("Waits for refreshing results.")
     public CatalogPage waitForRefreshFilter(){
         WebDriverWait waitAsc = new WebDriverWait(driver,2);
         waitAsc.until(ExpectedConditions.presenceOfElementLocated(movieFilter));
         return new CatalogPage(driver);
     }
 
+    @Step("Waits for refresh after sorting.")
     public CatalogPage waitForRefreshSort(){
         WebDriverWait waitAsc = new WebDriverWait(driver,1);
         waitAsc.until(ExpectedConditions.presenceOfElementLocated(movieSort));
         return new CatalogPage(driver);
     }
 
+    @Step("Waits for movie cards.")
     public CatalogPage waitForMovieCards(){
         WebDriverWait wait2 = new WebDriverWait(driver, 5);
         wait2.until(ExpectedConditions.numberOfElementsToBeMoreThan(cardsBy,10));
         return new CatalogPage(driver);
     }
 
+    @Step("Clicks a random movie.")
     public MoviePage clickRandomMovie(){
         Random rand = new Random();
         List<WebElement> cards = driver.findElements(cardsBy);
@@ -76,17 +86,20 @@ public class CatalogPage extends BasePage {
         return new MoviePage(driver);
     }
 
+    @Step("Clicks the Results by dropdown.")
     public CatalogPage clickSortResultsBy(){
         //By sortBy = By.cssSelector("#media_v4 > div > div > div.content > div:nth-child(1) > div:nth-child(1) > div.filter > span > span > span.k-select > span");
         driver.findElement(sortBy).click();
         return new CatalogPage(driver);
     }
 
+    @Step("Clicks ascending release date.")
     public CatalogPage clickAscendingOrder(){
         driver.findElement(dateAscBy).click();
         return new CatalogPage(driver);
     }
 
+    @Step("Checks ascending order of the 4 first movies.")
     public Boolean checkAscendingOrder(){
         List<WebElement> moviesList = driver.findElements(moviesListBy);
         for (int i = 0; i < 4 ; i++)
