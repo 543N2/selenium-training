@@ -7,14 +7,17 @@ import org.openqa.selenium.WebDriver;
 
 public class UserPage extends BasePage{
 
-    private By usernameDisplayBy = By.cssSelector("div[class='about'] a[href='/u/"+ User.getUsername() +"']");
+    private By usernameDisplayBy;
 
     public UserPage(WebDriver driver){
         super(driver);
     }
 
     @Step("Reads username.")
-    public String readUsername(){
+    public String readUsername(User user){
+        String locator = "div[class='about'] a[href='/u/"+ user.getUsername() +"']";
+        this.usernameDisplayBy = By.cssSelector(locator);
         return driver.findElement(usernameDisplayBy).getText();
     }
+
 }

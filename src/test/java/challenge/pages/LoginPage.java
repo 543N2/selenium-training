@@ -7,10 +7,6 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginPage extends BasePage {
 
-    private final String username = User.getUsername();
-    private final String password = User.getPassword();
-    private final String fakeUsername = User.getFakeUsername();
-    private final String fakePassword = User.getFakePassword();
     private final String redColor = "rgba(212, 2, 66, 1)";
     private final By usernameInputBy = By.id("username");
     private final By passwordInputBy = By.id("password");
@@ -22,31 +18,29 @@ public class LoginPage extends BasePage {
 
     public LoginPage(WebDriver driver){ super(driver); }
 
-    public String username() { return username; }
-
     public String redColor(){ return redColor; }
 
     @Step("Types username.")
-    public LoginPage typeUsername(){
-        driver.findElement(usernameInputBy).sendKeys(username);
+    public LoginPage typeUsername(User user){
+        driver.findElement(usernameInputBy).sendKeys(user.getUsername());
         return new LoginPage(driver);
     }
 
     @Step("Types username.")
-    public LoginPage typeFakeUsername(){
-        driver.findElement(usernameInputBy).sendKeys(fakeUsername);
+    public LoginPage typeFakeUsername(User user){
+        driver.findElement(usernameInputBy).sendKeys(user.getFakeUsername());
         return new LoginPage(driver);
     }
 
     @Step("Types username.")
-    public LoginPage typePassword(){
-        driver.findElement(passwordInputBy).sendKeys(password);
+    public LoginPage typePassword(User user){
+        driver.findElement(passwordInputBy).sendKeys(user.getPassword());
         return new LoginPage(driver);
     }
 
     @Step("Types username.")
-    public LoginPage typeFakePassword(){
-        driver.findElement(passwordInputBy).sendKeys(fakePassword);
+    public LoginPage typeFakePassword(User user){
+        driver.findElement(passwordInputBy).sendKeys(user.getFakePassword());
         return new LoginPage(driver);
     }
 

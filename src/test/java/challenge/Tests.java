@@ -3,25 +3,26 @@ package challenge;
 import challenge.pages.*;
 import io.qameta.allure.Description;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-//@Listeners({TestListener.class})
 public class Tests extends Hooks {
-
 
     @Test(priority=0, description = "Successful login with username and password")
     @Description("Test description: Login test with valid username and password.")
     public void successfulLogin(){
         logger.info("successfulLogin Test started.");
-        LandingPage landing = new LandingPage(driver);
-        LoginPage login = landing
+
+        User user = new User();
+        user.readProperties();
+
+        LandingPage landingPage = new LandingPage(driver);
+        LoginPage loginPage = landingPage
                 .clickLoginButton();
-        UserPage user = login
-                .typeUsername()
-                .typePassword()
+        UserPage userPage = loginPage
+                .typeUsername(user)
+                .typePassword(user)
                 .clickLoginButton();
-        Assert.assertEquals( login.username(), user.readUsername());
+        Assert.assertEquals( user.getUsername(), userPage.readUsername(user));
         logger.info("successfulLogin Test ended.");
     }
 
@@ -30,21 +31,24 @@ public class Tests extends Hooks {
     public void failedLogin(){
         logger.info("failedLogin Test started.");
 
-        LandingPage landing = new LandingPage(driver);
+        User user = new User();
+        user.readProperties();
 
-        LoginPage login = landing.clickLoginButton();
+        LandingPage landingPage = new LandingPage(driver);
 
-        String backgroundColor = login
-                .typeFakeUsername()
-                .typeFakePassword()
+        LoginPage loginPage = landingPage.clickLoginButton();
+
+        String backgroundColor = loginPage
+                .typeFakeUsername(user)
+                .typeFakePassword(user)
                 .clickLoginButtonToFail()
                 .readBoxColor();
-        Assert.assertEquals(backgroundColor,login.redColor());
+        Assert.assertEquals(backgroundColor, loginPage.redColor());
 
-        String redErrorMessage = login.readErrorMessage();
+        String redErrorMessage = loginPage.readErrorMessage();
         Assert.assertEquals(redErrorMessage," There was a problem");
 
-        Boolean areTwoErrorMessages = login.numberOfMessages();
+        Boolean areTwoErrorMessages = loginPage.numberOfMessages();
         Assert.assertEquals(areTwoErrorMessages,true);
 
         logger.info("failedLogin Test ended.");
