@@ -22,7 +22,7 @@ public class Tests extends Hooks {
                 .typeUsername(user)
                 .typePassword(user)
                 .clickLoginButton();
-        Assert.assertEquals( user.getUsername(), userPage.readUsername(user));
+        Assert.assertEquals( user.getUsername(), userPage.readUsername(user)+"FAILURE");
         logger.info("successfulLogin Test ended.");
     }
 
