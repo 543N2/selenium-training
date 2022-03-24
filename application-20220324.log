@@ -1,0 +1,38 @@
+2022-03-24 09:15:33.065 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are starting.
+2022-03-24 09:15:34.499 [TestNG-tests-1] INFO  challenge.tests.Tests - addMovieToListAPIAndUI Test started.
+2022-03-24 09:15:39.244 [TestNG-tests-1] INFO  challenge.tests.Tests - Token requested. Obtained: 916adb6295e172bb654edd9602127fd96ad892a1
+2022-03-24 09:15:39.725 [TestNG-tests-1] INFO  challenge.tests.Tests - Sent request to login with username (543n2), password (543n2Movies).
+2022-03-24 09:15:39.895 [TestNG-tests-1] INFO  challenge.tests.Tests - Session Id requested. Obtained: e47228cb97bb963862ca45b049623616b72305e9
+2022-03-24 09:15:40.221 [TestNG-tests-1] INFO  challenge.tests.Tests - A List was created. List id: 8196096
+2022-03-24 09:15:40.417 [TestNG-tests-1] INFO  challenge.tests.Tests - The movie Blade Runner was added to the List with id: 78
+2022-03-24 09:15:41.993 [TestNG-tests-1] INFO  challenge.tests.Tests - Successful login Test ended.
+2022-03-24 09:15:44.682 [TestNG-tests-1] INFO  challenge.tests.Tests - addMovieToListAPIAndUI Test ended.
+2022-03-24 09:15:44.695 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are ending.
+2022-03-24 09:15:51.585 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are starting.
+2022-03-24 09:15:52.838 [TestNG-tests-1] INFO  challenge.tests.Tests - failedLogin Test started.
+2022-03-24 09:15:54.111 [TestNG-tests-1] INFO  challenge.tests.Tests - failedLogin Test ended.
+2022-03-24 09:15:54.115 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are ending.
+2022-03-24 09:16:00.713 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are starting.
+2022-03-24 09:16:01.954 [TestNG-tests-1] INFO  challenge.tests.Tests - intentionalFailedLogin Test started.
+2022-03-24 09:16:07.272 [TestNG-tests-1] INFO  challenge.tests.Tests - A screenshot was taken for intentionallyFailedLogin failed test.
+2022-03-24 09:16:07.274 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are ending.
+2022-03-24 09:16:13.534 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are starting.
+2022-03-24 09:16:14.635 [TestNG-tests-1] INFO  challenge.tests.Tests - sortByDatesOnAscendingOrder Test started.
+2022-03-24 09:16:17.111 [TestNG-tests-1] INFO  challenge.tests.Tests - sortByDatesOnAscendingOrder Test ended.
+2022-03-24 09:16:17.116 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are ending.
+2022-03-24 09:16:23.762 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are starting.
+2022-03-24 09:16:24.987 [TestNG-tests-1] INFO  challenge.tests.Tests - successfulLogin Test started.
+2022-03-24 09:16:27.054 [TestNG-tests-1] INFO  challenge.tests.Tests - successfulLogin Test ended.
+2022-03-24 09:16:27.059 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are ending.
+2022-03-24 09:16:33.276 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are starting.
+2022-03-24 09:16:34.572 [TestNG-tests-1] INFO  challenge.tests.Tests - successfulSearch Test started.
+2022-03-24 09:16:35.613 [TestNG-tests-1] INFO  challenge.tests.Tests - successfulSearch Test ended.
+2022-03-24 09:16:35.618 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are ending.
+2022-03-24 09:16:42.288 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are starting.
+2022-03-24 09:16:43.469 [TestNG-tests-1] INFO  challenge.tests.Tests - validateActingTimeline Test started.
+2022-03-24 09:16:46.911 [TestNG-tests-1] INFO  challenge.tests.Tests - validateActingTimeline Test ended.
+2022-03-24 09:16:46.915 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are ending.
+2022-03-24 09:16:50.566 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are starting.
+2022-03-24 09:16:52.052 [TestNG-tests-1] INFO  challenge.tests.Tests - verifyMovieGenreFilter Test started.
+2022-03-24 09:16:56.135 [TestNG-tests-1] INFO  challenge.tests.Tests - verifyMovieGenreFilter Test ended.
+2022-03-24 09:16:56.138 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are ending.

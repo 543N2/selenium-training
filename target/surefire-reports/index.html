@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Demo_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Demo Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Demo_Suite" class="navigator-link ">
+                    <span>C:\Users\jusaenz\Documents\selenium-challenge\selenium-training\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Demo_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Demo_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Demo_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Demo_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Demo_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Demo_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Demo_Suite" class="hide-methods failed suite-Demo_Suite"> (hide)</a> <!-- hide-methods failed suite-Demo_Suite -->
+                      <a href="#" panel-name="suite-Demo_Suite" class="show-methods failed suite-Demo_Suite"> (show)</a> <!-- show-methods failed suite-Demo_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Demo_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Suite" title="challenge.tests.Tests" class="method navigator-link" hash-for-method="intentionallyFailedLogin">intentionallyFailedLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Demo_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Demo_Suite" class="hide-methods passed suite-Demo_Suite"> (hide)</a> <!-- hide-methods passed suite-Demo_Suite -->
+                      <a href="#" panel-name="suite-Demo_Suite" class="show-methods passed suite-Demo_Suite"> (show)</a> <!-- show-methods passed suite-Demo_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Demo_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Suite" title="challenge.tests.Tests" class="method navigator-link" hash-for-method="addMovieToListAPIAndUI">addMovieToListAPIAndUI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Suite" title="challenge.tests.Tests" class="method navigator-link" hash-for-method="failedLogin">failedLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Suite" title="challenge.tests.Tests" class="method navigator-link" hash-for-method="sortByDatesOnAscendingOrder">sortByDatesOnAscendingOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Suite" title="challenge.tests.Tests" class="method navigator-link" hash-for-method="successfulLogin">successfulLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Suite" title="challenge.tests.Tests" class="method navigator-link" hash-for-method="successfulSearch">successfulSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Suite" title="challenge.tests.Tests" class="method navigator-link" hash-for-method="validateActingTimeline">validateActingTimeline</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Demo_Suite" title="challenge.tests.Tests" class="method navigator-link" hash-for-method="verifyMovieGenreFilter">verifyMovieGenreFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Demo_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Demo_Suite" class="panel Demo_Suite">
+          <div class="suite-Demo_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">challenge.tests.Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="intentionallyFailedLogin">
+                  </a> <!-- intentionallyFailedLogin -->
+                  <span class="method-name">intentionallyFailedLogin</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [543n2FAIL!!!] but found [543n2]
+	at challenge.tests.Tests.intentionallyFailedLogin(Tests.java:243)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Intended to fail: UN-Successful login with username and password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demo_Suite-class-failed -->
+          <div class="suite-Demo_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">challenge.tests.Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addMovieToListAPIAndUI">
+                  </a> <!-- addMovieToListAPIAndUI -->
+                  <span class="method-name">addMovieToListAPIAndUI</span>
+                  <em>
+(Add movie to list using API and UI)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="failedLogin">
+                  </a> <!-- failedLogin -->
+                  <span class="method-name">failedLogin</span>
+                  <em>
+(Failed login with both fake username and password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sortByDatesOnAscendingOrder">
+                  </a> <!-- sortByDatesOnAscendingOrder -->
+                  <span class="method-name">sortByDatesOnAscendingOrder</span>
+                  <em>
+( Sorting test by ascending movie date)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulLogin">
+                  </a> <!-- successfulLogin -->
+                  <span class="method-name">successfulLogin</span>
+                  <em>
+(Successful login with username and password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulSearch">
+                  </a> <!-- successfulSearch -->
+                  <span class="method-name">successfulSearch</span>
+                  <em>
+(Successful search of a movie)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateActingTimeline">
+                  </a> <!-- validateActingTimeline -->
+                  <span class="method-name">validateActingTimeline</span>
+                  <em>
+(Acting timeline validation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMovieGenreFilter">
+                  </a> <!-- verifyMovieGenreFilter -->
+                  <span class="method-name">verifyMovieGenreFilter</span>
+                  <em>
+(Filter test by movie genre)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Demo_Suite-class-passed -->
+        </div> <!-- panel Demo_Suite -->
+        <div panel-name="test-xml-Demo_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\jusaenz\Documents\selenium-challenge\selenium-training\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Demo Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Demo Folder&quot; group-by-instances=&quot;true&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;challenge.tests.Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Demo Folder --&gt;
+&lt;/suite&gt; &lt;!-- Demo Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Demo_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Demo Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Demo Folder (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Demo_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Demo Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Demo_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Demo Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Demo_Suite');
+function tableData_Demo_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addMovieToListAPIAndUI')
+data.setCell(0, 2, 'challenge.tests.Tests')
+data.setCell(0, 3, 10261);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyMovieGenreFilter')
+data.setCell(1, 2, 'challenge.tests.Tests')
+data.setCell(1, 3, 4086);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateActingTimeline')
+data.setCell(2, 2, 'challenge.tests.Tests')
+data.setCell(2, 3, 3447);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'sortByDatesOnAscendingOrder')
+data.setCell(3, 2, 'challenge.tests.Tests')
+data.setCell(3, 3, 2479);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'successfulLogin')
+data.setCell(4, 2, 'challenge.tests.Tests')
+data.setCell(4, 3, 2069);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'intentionallyFailedLogin')
+data.setCell(5, 2, 'challenge.tests.Tests')
+data.setCell(5, 3, 1702);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'failedLogin')
+data.setCell(6, 2, 'challenge.tests.Tests')
+data.setCell(6, 3, 1280);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'successfulSearch')
+data.setCell(7, 2, 'challenge.tests.Tests')
+data.setCell(7, 3, 1047);
+window.suiteTableData['Demo_Suite']= { tableData: data, tableDiv: 'times-div-Demo_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Demo_Suite">
+              </div> <!-- times-div-Demo_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Demo_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Demo Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Demo_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Demo_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">challenge.tests.Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addMovieToListAPIAndUI</span>
+                <span class="method-start">10724 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=addMovieToListAPIAndUI status=SUCCESS method=Tests.addMovieToListAPIAndUI()[pri:0, ...)</span>
+                <span class="method-start">20995 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">21524 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">failedLogin</span>
+                <span class="method-start">29134 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=failedLogin status=SUCCESS method=Tests.failedLogin()[pri:0, instance:challenge.tes...)</span>
+                <span class="method-start">30418 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">30748 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">intentionallyFailedLogin</span>
+                <span class="method-start">38253 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=intentionallyFailedLogin status=FAILURE method=Tests.intentionallyFailedLogin()[pri...)</span>
+                <span class="method-start">39964 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">43891 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sortByDatesOnAscendingOrder</span>
+                <span class="method-start">50935 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=sortByDatesOnAscendingOrder status=SUCCESS method=Tests.sortByDatesOnAscendingOrder...)</span>
+                <span class="method-start">53418 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">53761 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successfulLogin</span>
+                <span class="method-start">61288 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=successfulLogin status=SUCCESS method=Tests.successfulLogin()[pri:0, instance:chall...)</span>
+                <span class="method-start">63361 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">63725 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successfulSearch</span>
+                <span class="method-start">70870 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=successfulSearch status=SUCCESS method=Tests.successfulSearch()[pri:0, instance:cha...)</span>
+                <span class="method-start">71920 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">72386 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateActingTimeline</span>
+                <span class="method-start">79767 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateActingTimeline status=SUCCESS method=Tests.validateActingTimeline()[pri:0, ...)</span>
+                <span class="method-start">83217 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">83444 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMovieGenreFilter</span>
+                <span class="method-start">88352 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyMovieGenreFilter status=SUCCESS method=Tests.verifyMovieGenreFilter()[pri:0, ...)</span>
+                <span class="method-start">92440 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

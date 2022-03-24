@@ -1,0 +1,1 @@
+{"uuid":"e266913b-c38e-45ef-b051-87e69108df0c","name":"challenge.entities.Hooks.setup","children":["34d0d090-1060-45a4-91a4-2aa642752bc4"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1648131354445,"stop":1648131361948}],"afters":[],"start":1648131354445,"stop":1648131361949}

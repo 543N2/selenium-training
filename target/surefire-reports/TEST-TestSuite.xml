@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="94.512" tests="8" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\jusaenz\Documents\selenium-challenge\selenium-training\target\test-classes;C:\Users\jusaenz\Documents\selenium-challenge\selenium-training\target\classes;C:\Users\jusaenz\.m2\repository\org\testng\testng\7.5\testng-7.5.jar;C:\Users\jusaenz\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\jusaenz\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\jusaenz\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\jusaenz\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\jusaenz\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\jusaenz\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\jusaenz\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\jusaenz\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\jusaenz\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\jusaenz\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\jusaenz\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\jusaenz\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\jusaenz\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\plugins\maven-surefire-plugin\3.0.0-M5\maven-surefire-plugin-3.0.0-M5.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\surefire\maven-surefire-common\3.0.0-M5\maven-surefire-common-3.0.0-M5.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\surefire\surefire-api\3.0.0-M5\surefire-api-3.0.0-M5.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.0.0-M5\surefire-logger-api-3.0.0-M5.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\surefire\surefire-extensions-api\3.0.0-M5\surefire-extensions-api-3.0.0-M5.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\surefire\surefire-booter\3.0.0-M5\surefire-booter-3.0.0-M5.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.0.0-M5\surefire-extensions-spi-3.0.0-M5.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\maven-toolchain\3.0-alpha-2\maven-toolchain-3.0-alpha-2.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\shared\maven-artifact-transfer\0.11.0\maven-artifact-transfer-0.11.0.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.0.1\maven-common-artifact-filters-3.0.1.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\jusaenz\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\jusaenz\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\jusaenz\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\jusaenz\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.1.0\maven-shared-utils-3.1.0.jar;C:\Users\jusaenz\.m2\repository\org\codehaus\plexus\plexus-java\1.0.5\plexus-java-1.0.5.jar;C:\Users\jusaenz\.m2\repository\org\ow2\asm\asm\7.2\asm-7.2.jar;C:\Users\jusaenz\.m2\repository\com\thoughtworks\qdox\qdox\2.0-M9\qdox-2.0-M9.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.0.0-M4\surefire-shared-utils-3.0.0-M4.jar;C:\Users\jusaenz\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.0\log4j-api-2.13.0.jar;C:\Users\jusaenz\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.0\log4j-core-2.13.0.jar;C:\Users\jusaenz\.m2\repository\io\qameta\allure\allure-testng\2.17.3\allure-testng-2.17.3.jar;C:\Users\jusaenz\.m2\repository\io\qameta\allure\allure-java-commons\2.17.3\allure-java-commons-2.17.3.jar;C:\Users\jusaenz\.m2\repository\io\qameta\allure\allure-model\2.17.3\allure-model-2.17.3.jar;C:\Users\jusaenz\.m2\repository\io\qameta\allure\allure-test-filter\2.17.3\allure-test-filter-2.17.3.jar;C:\Users\jusaenz\.m2\repository\ru\yandex\qatools\ashot\ashot\1.5.4\ashot-1.5.4.jar;C:\Users\jusaenz\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\jusaenz\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\jusaenz\.m2\repository\io\rest-assured\rest-assured\4.5.1\rest-assured-4.5.1.jar;C:\Users\jusaenz\.m2\repository\org\codehaus\groovy\groovy\3.0.9\groovy-3.0.9.jar;C:\Users\jusaenz\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.9\groovy-xml-3.0.9.jar;C:\Users\jusaenz\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\jusaenz\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\jusaenz\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\jusaenz\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\jusaenz\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\jusaenz\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\jusaenz\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\jusaenz\.m2\repository\io\rest-assured\json-path\4.5.1\json-path-4.5.1.jar;C:\Users\jusaenz\.m2\repository\org\codehaus\groovy\groovy-json\3.0.9\groovy-json-3.0.9.jar;C:\Users\jusaenz\.m2\repository\io\rest-assured\rest-assured-common\4.5.1\rest-assured-common-4.5.1.jar;C:\Users\jusaenz\.m2\repository\io\rest-assured\xml-path\4.5.1\xml-path-4.5.1.jar;C:\Users\jusaenz\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\jusaenz\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="org.apache.logging.log4j.assignedSequences" value="10435"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\jusaenz\AppData\Local\Temp\surefire4927477135019219171\surefirebooter15498355203628502026.jar C:\Users\jusaenz\AppData\Local\Temp\surefire4927477135019219171 2022-03-24T09-15-19_216-jvmRun1 surefire10760094885762886547tmp surefire_010864050935484073114tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\jusaenz\Documents\selenium-challenge\selenium-training\target\test-classes;C:\Users\jusaenz\Documents\selenium-challenge\selenium-training\target\classes;C:\Users\jusaenz\.m2\repository\org\testng\testng\7.5\testng-7.5.jar;C:\Users\jusaenz\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\jusaenz\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\jusaenz\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\jusaenz\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\jusaenz\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\jusaenz\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\jusaenz\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\jusaenz\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\jusaenz\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\jusaenz\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\jusaenz\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\jusaenz\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\jusaenz\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\jusaenz\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\plugins\maven-surefire-plugin\3.0.0-M5\maven-surefire-plugin-3.0.0-M5.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\surefire\maven-surefire-common\3.0.0-M5\maven-surefire-common-3.0.0-M5.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\surefire\surefire-api\3.0.0-M5\surefire-api-3.0.0-M5.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.0.0-M5\surefire-logger-api-3.0.0-M5.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\surefire\surefire-extensions-api\3.0.0-M5\surefire-extensions-api-3.0.0-M5.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\surefire\surefire-booter\3.0.0-M5\surefire-booter-3.0.0-M5.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.0.0-M5\surefire-extensions-spi-3.0.0-M5.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\maven-toolchain\3.0-alpha-2\maven-toolchain-3.0-alpha-2.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\shared\maven-artifact-transfer\0.11.0\maven-artifact-transfer-0.11.0.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.0.1\maven-common-artifact-filters-3.0.1.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\jusaenz\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\jusaenz\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\jusaenz\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\jusaenz\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.1.0\maven-shared-utils-3.1.0.jar;C:\Users\jusaenz\.m2\repository\org\codehaus\plexus\plexus-java\1.0.5\plexus-java-1.0.5.jar;C:\Users\jusaenz\.m2\repository\org\ow2\asm\asm\7.2\asm-7.2.jar;C:\Users\jusaenz\.m2\repository\com\thoughtworks\qdox\qdox\2.0-M9\qdox-2.0-M9.jar;C:\Users\jusaenz\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.0.0-M4\surefire-shared-utils-3.0.0-M4.jar;C:\Users\jusaenz\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.0\log4j-api-2.13.0.jar;C:\Users\jusaenz\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.0\log4j-core-2.13.0.jar;C:\Users\jusaenz\.m2\repository\io\qameta\allure\allure-testng\2.17.3\allure-testng-2.17.3.jar;C:\Users\jusaenz\.m2\repository\io\qameta\allure\allure-java-commons\2.17.3\allure-java-commons-2.17.3.jar;C:\Users\jusaenz\.m2\repository\io\qameta\allure\allure-model\2.17.3\allure-model-2.17.3.jar;C:\Users\jusaenz\.m2\repository\io\qameta\allure\allure-test-filter\2.17.3\allure-test-filter-2.17.3.jar;C:\Users\jusaenz\.m2\repository\ru\yandex\qatools\ashot\ashot\1.5.4\ashot-1.5.4.jar;C:\Users\jusaenz\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\jusaenz\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\jusaenz\.m2\repository\io\rest-assured\rest-assured\4.5.1\rest-assured-4.5.1.jar;C:\Users\jusaenz\.m2\repository\org\codehaus\groovy\groovy\3.0.9\groovy-3.0.9.jar;C:\Users\jusaenz\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.9\groovy-xml-3.0.9.jar;C:\Users\jusaenz\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\jusaenz\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\jusaenz\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\jusaenz\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\jusaenz\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\jusaenz\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\jusaenz\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\jusaenz\.m2\repository\io\rest-assured\json-path\4.5.1\json-path-4.5.1.jar;C:\Users\jusaenz\.m2\repository\org\codehaus\groovy\groovy-json\3.0.9\groovy-json-3.0.9.jar;C:\Users\jusaenz\.m2\repository\io\rest-assured\rest-assured-common\4.5.1\rest-assured-common-4.5.1.jar;C:\Users\jusaenz\.m2\repository\io\rest-assured\xml-path\4.5.1\xml-path-4.5.1.jar;C:\Users\jusaenz\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\jusaenz\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\jusaenz"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\jusaenz\Documents\selenium-challenge\selenium-training"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\jusaenz\AppData\Local\Temp\surefire4927477135019219171\surefirebooter15498355203628502026.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.2+8-LTS-86"/>
+    <property name="user.name" value="JuSaenz"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\jusaenz\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\jusaenz\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.2"/>
+    <property name="user.dir" value="C:\Users\jusaenz\Documents\selenium-challenge\selenium-training"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.8.4\bin;C:\Program Files\Java\jdk-17.0.2\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Users\jusaenz\scoop\shims;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\jusaenz\AppData\Local\Microsoft\WindowsApps;;C:\Users\jusaenz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jusaenz\AppData\Roaming\npm;C:\Users\jusaenz\.dotnet\tools;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.2+8-LTS-86"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="addMovieToListAPIAndUI" classname="challenge.tests.Tests" time="10.048">
+    <system-out><![CDATA[09:15:33.065 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are starting.
+09:15:34.499 [TestNG-tests-1] INFO  challenge.tests.Tests - addMovieToListAPIAndUI Test started.
+09:15:39.244 [TestNG-tests-1] INFO  challenge.tests.Tests - Token requested. Obtained: 916adb6295e172bb654edd9602127fd96ad892a1
+09:15:39.725 [TestNG-tests-1] INFO  challenge.tests.Tests - Sent request to login with username (543n2), password (543n2Movies).
+09:15:39.895 [TestNG-tests-1] INFO  challenge.tests.Tests - Session Id requested. Obtained: e47228cb97bb963862ca45b049623616b72305e9
+{
+    "status_code": 1,
+    "status_message": "The item/record was created successfully.",
+    "success": true,
+    "list_id": 8196096
+}
+{
+    "status_code": 1,
+    "status_message": "The item/record was created successfully.",
+    "success": true,
+    "list_id": 8196096
+}
+09:15:40.221 [TestNG-tests-1] INFO  challenge.tests.Tests - A List was created. List id: 8196096
+09:15:40.417 [TestNG-tests-1] INFO  challenge.tests.Tests - The movie Blade Runner was added to the List with id: 78
+09:15:41.993 [TestNG-tests-1] INFO  challenge.tests.Tests - Successful login Test ended.
+09:15:44.682 [TestNG-tests-1] INFO  challenge.tests.Tests - addMovieToListAPIAndUI Test ended.
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 33219
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 24, 2022 9:15:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="failedLogin" classname="challenge.tests.Tests" time="1.233">
+    <system-out><![CDATA[09:15:44.695 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are ending.
+09:15:51.585 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are starting.
+09:15:52.838 [TestNG-tests-1] INFO  challenge.tests.Tests - failedLogin Test started.
+09:15:54.111 [TestNG-tests-1] INFO  challenge.tests.Tests - failedLogin Test ended.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 17274
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 24, 2022 9:15:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="intentionallyFailedLogin" classname="challenge.tests.Tests" time="1.674">
+    <failure message="expected [543n2FAIL!!!] but found [543n2]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [543n2FAIL!!!] but found [543n2]
+	at challenge.tests.Tests.intentionallyFailedLogin(Tests.java:243)
+]]></failure>
+    <system-out><![CDATA[09:15:54.115 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are ending.
+09:16:00.713 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are starting.
+09:16:01.954 [TestNG-tests-1] INFO  challenge.tests.Tests - intentionalFailedLogin Test started.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 46829
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 24, 2022 9:16:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="sortByDatesOnAscendingOrder" classname="challenge.tests.Tests" time="2.417">
+    <system-out><![CDATA[09:16:07.272 [TestNG-tests-1] INFO  challenge.tests.Tests - A screenshot was taken for intentionallyFailedLogin failed test.
+09:16:07.274 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are ending.
+09:16:13.534 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are starting.
+09:16:14.635 [TestNG-tests-1] INFO  challenge.tests.Tests - sortByDatesOnAscendingOrder Test started.
+09:16:17.111 [TestNG-tests-1] INFO  challenge.tests.Tests - sortByDatesOnAscendingOrder Test ended.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 47453
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 24, 2022 9:16:13 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="successfulLogin" classname="challenge.tests.Tests" time="2.045">
+    <system-out><![CDATA[09:16:17.116 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are ending.
+09:16:23.762 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are starting.
+09:16:24.987 [TestNG-tests-1] INFO  challenge.tests.Tests - successfulLogin Test started.
+09:16:27.054 [TestNG-tests-1] INFO  challenge.tests.Tests - successfulLogin Test ended.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 7827
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 24, 2022 9:16:23 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="successfulSearch" classname="challenge.tests.Tests" time="1.012">
+    <system-out><![CDATA[09:16:27.059 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are ending.
+09:16:33.276 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are starting.
+09:16:34.572 [TestNG-tests-1] INFO  challenge.tests.Tests - successfulSearch Test started.
+09:16:35.613 [TestNG-tests-1] INFO  challenge.tests.Tests - successfulSearch Test ended.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 17515
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 24, 2022 9:16:33 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="validateActingTimeline" classname="challenge.tests.Tests" time="3.396">
+    <system-out><![CDATA[09:16:35.618 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are ending.
+09:16:42.288 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are starting.
+09:16:43.469 [TestNG-tests-1] INFO  challenge.tests.Tests - validateActingTimeline Test started.
+09:16:46.911 [TestNG-tests-1] INFO  challenge.tests.Tests - validateActingTimeline Test ended.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 16287
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 24, 2022 9:16:42 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyMovieGenreFilter" classname="challenge.tests.Tests" time="4.013">
+    <system-out><![CDATA[09:16:46.915 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are ending.
+09:16:50.566 [TestNG-tests-1] INFO  challenge.tests.Tests - Tests are starting.
+09:16:52.052 [TestNG-tests-1] INFO  challenge.tests.Tests - verifyMovieGenreFilter Test started.
+09:16:56.135 [TestNG-tests-1] INFO  challenge.tests.Tests - verifyMovieGenreFilter Test ended.
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 19759
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 24, 2022 9:16:50 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

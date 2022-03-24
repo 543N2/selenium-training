@@ -1,0 +1,17 @@
+challenge\entities\MovieById.class
+challenge\entities\Movie.class
+challenge\pages\BasePage.class
+challenge\pages\UserPage.class
+challenge\entities\User.class
+challenge\entities\ListByAll.class
+challenge\pages\ActorPage.class
+challenge\pages\ListPage.class
+challenge\pages\CatalogPage.class
+challenge\entities\List.class
+challenge\pages\LoginPage.class
+challenge\entities\Endpoint.class
+challenge\entities\Hooks.class
+challenge\pages\MoviePage.class
+challenge\pages\LandingPage.class
+challenge\entities\Session.class
+challenge\tests\Tests.class

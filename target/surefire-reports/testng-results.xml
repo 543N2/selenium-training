@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-24T09:15:23 COT" name="Demo Suite" finished-at="2022-03-24T09:16:56 COT" duration-ms="92726">
+    <groups>
+    </groups>
+    <test started-at="2022-03-24T09:15:23 COT" name="Demo Folder" finished-at="2022-03-24T09:16:56 COT" duration-ms="92726">
+      <class name="challenge.tests.Tests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:15:23 COT" name="setup" finished-at="2022-03-24T09:15:34 COT" duration-ms="10606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addMovieToListAPIAndUI()[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:15:34 COT" name="addMovieToListAPIAndUI" description="Add movie to list using API and UI" finished-at="2022-03-24T09:15:44 COT" duration-ms="10261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMovieToListAPIAndUI -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:15:44 COT" name="tearDown" finished-at="2022-03-24T09:15:45 COT" duration-ms="524" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addMovieToListAPIAndUI status=SUCCESS method=Tests.addMovieToListAPIAndUI()[pri:0, instance:challenge.tests.Tests@3b7ff809] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:15:45 COT" name="setup" finished-at="2022-03-24T09:15:52 COT" duration-ms="7607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="failedLogin()[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:15:52 COT" name="failedLogin" description="Failed login with both fake username and password" finished-at="2022-03-24T09:15:54 COT" duration-ms="1280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failedLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:15:54 COT" name="tearDown" finished-at="2022-03-24T09:15:54 COT" duration-ms="327" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=failedLogin status=SUCCESS method=Tests.failedLogin()[pri:0, instance:challenge.tests.Tests@3b7ff809] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:15:54 COT" name="setup" finished-at="2022-03-24T09:16:01 COT" duration-ms="7503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="intentionallyFailedLogin()[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:16:01 COT" name="intentionallyFailedLogin" description="Intended to fail: UN-Successful login with username and password" finished-at="2022-03-24T09:16:03 COT" duration-ms="1702" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [543n2FAIL!!!] but found [543n2]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [543n2FAIL!!!] but found [543n2]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at challenge.tests.Tests.intentionallyFailedLogin(Tests.java:243)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intentionallyFailedLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:16:03 COT" name="tearDown" finished-at="2022-03-24T09:16:07 COT" duration-ms="3923" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=intentionallyFailedLogin status=FAILURE method=Tests.intentionallyFailedLogin()[pri:0, instance:challenge.tests.Tests@3b7ff809] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:16:07 COT" name="setup" finished-at="2022-03-24T09:16:14 COT" duration-ms="7042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="sortByDatesOnAscendingOrder()[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:16:14 COT" name="sortByDatesOnAscendingOrder" description=" Sorting test by ascending movie date" finished-at="2022-03-24T09:16:17 COT" duration-ms="2479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortByDatesOnAscendingOrder -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:16:17 COT" name="tearDown" finished-at="2022-03-24T09:16:17 COT" duration-ms="341" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sortByDatesOnAscendingOrder status=SUCCESS method=Tests.sortByDatesOnAscendingOrder()[pri:0, instance:challenge.tests.Tests@3b7ff809] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:16:17 COT" name="setup" finished-at="2022-03-24T09:16:24 COT" duration-ms="7525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="successfulLogin()[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:16:24 COT" name="successfulLogin" description="Successful login with username and password" finished-at="2022-03-24T09:16:27 COT" duration-ms="2069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:16:27 COT" name="tearDown" finished-at="2022-03-24T09:16:27 COT" duration-ms="361" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=successfulLogin status=SUCCESS method=Tests.successfulLogin()[pri:0, instance:challenge.tests.Tests@3b7ff809] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:16:27 COT" name="setup" finished-at="2022-03-24T09:16:34 COT" duration-ms="7143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="successfulSearch()[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:16:34 COT" name="successfulSearch" description="Successful search of a movie" finished-at="2022-03-24T09:16:35 COT" duration-ms="1047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulSearch -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:16:35 COT" name="tearDown" finished-at="2022-03-24T09:16:36 COT" duration-ms="464" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=successfulSearch status=SUCCESS method=Tests.successfulSearch()[pri:0, instance:challenge.tests.Tests@3b7ff809] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:16:36 COT" name="setup" finished-at="2022-03-24T09:16:43 COT" duration-ms="7380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateActingTimeline()[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:16:43 COT" name="validateActingTimeline" description="Acting timeline validation" finished-at="2022-03-24T09:16:46 COT" duration-ms="3447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateActingTimeline -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:16:46 COT" name="tearDown" finished-at="2022-03-24T09:16:47 COT" duration-ms="226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateActingTimeline status=SUCCESS method=Tests.validateActingTimeline()[pri:0, instance:challenge.tests.Tests@3b7ff809] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:16:47 COT" name="setup" finished-at="2022-03-24T09:16:52 COT" duration-ms="4906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyMovieGenreFilter()[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:16:52 COT" name="verifyMovieGenreFilter" description="Filter test by movie genre" finished-at="2022-03-24T09:16:56 COT" duration-ms="4086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMovieGenreFilter -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:challenge.tests.Tests@3b7ff809]" started-at="2022-03-24T09:16:56 COT" name="tearDown" finished-at="2022-03-24T09:16:56 COT" duration-ms="235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMovieGenreFilter status=SUCCESS method=Tests.verifyMovieGenreFilter()[pri:0, instance:challenge.tests.Tests@3b7ff809] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- challenge.tests.Tests -->
+    </test> <!-- Demo Folder -->
+  </suite> <!-- Demo Suite -->
+</testng-results>
