@@ -1,6 +1,6 @@
 package challenge.pages;
 
-import challenge.User;
+import challenge.entities.User;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

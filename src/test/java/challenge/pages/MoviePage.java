@@ -15,7 +15,6 @@ public class MoviePage extends BasePage{
     private final By movieTitleBy = By.cssSelector("div.header_poster_wrapper section > div > h2 > a");
     private final By castBy = By.cssSelector("#cast_scroller>ol>li");
 
-
     public MoviePage(WebDriver driver) {
         super(driver);
     }
