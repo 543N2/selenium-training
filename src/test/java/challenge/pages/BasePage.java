@@ -11,10 +11,4 @@ public class BasePage {
         this.driver = driver;
     }
 
-    public void typeText(String text, By locatorBy){
-        driver.findElement(locatorBy).sendKeys(text);
-    }
-
-
-
 }

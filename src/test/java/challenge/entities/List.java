@@ -19,23 +19,13 @@ public abstract class List {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getDescription() {
         return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public String getLanguage() {
         return language;
     }
-
-    public void setLanguage(String language) { this.language = language; }
 
     public String getId() {
         return id;
@@ -44,8 +34,6 @@ public abstract class List {
     public void setId(String id) {
         this.id = id;
     }
-
-    public abstract Response deleteRequest(Endpoint endpoint, Session session);
 
     public Response addMovieToListRequest(Endpoint endpoint, Session session, Movie movie)
     {
@@ -64,25 +52,6 @@ public abstract class List {
         );
     };
 
-    public Response clearListRequest(Endpoint endpoint, Session session){
-        boolean confirm = true;
-        return (
-                given().contentType(ContentType.JSON)
-                        .queryParam("api_key", endpoint.getApiKey())
-                        .and().queryParam("session_id",session.getSessionId())
-                        .and().queryParam("confirm", confirm)
-                        .when()
-                        .post(endpoint.getClearList(this.getId()))
-                        .then()
-                        .extract()
-                        .response()
-        );
-    };
-
-    public abstract Response getListDetailsRequest(Endpoint endpoint, Session session);
-
     public abstract Response createRequest(Endpoint endpoint, Session session);
-
-
 
     }

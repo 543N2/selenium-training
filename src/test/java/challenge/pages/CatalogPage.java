@@ -88,7 +88,6 @@ public class CatalogPage extends BasePage {
 
     @Step("Clicks the Results by dropdown.")
     public CatalogPage clickSortResultsBy(){
-        //By sortBy = By.cssSelector("#media_v4 > div > div > div.content > div:nth-child(1) > div:nth-child(1) > div.filter > span > span > span.k-select > span");
         driver.findElement(sortBy).click();
         return new CatalogPage(driver);
     }

@@ -20,27 +20,10 @@ public class Endpoint {
         return "/authentication/session/new";
     }
 
-    public String getMovieSearch() {
-        return "/search/movie";
-    }
-
-    public String getMovieObtain(String movieId){
-        return "/movie/" + movieId;
-    }
-
-    public String getMovieRating(String movieId){
-        return "/movie/" + movieId + "/rating";
-    }
-
     public String getListCreate(){
         return "/list";
     }
 
-    public String getListDelete(String listId){ return "/list/" + listId; };
-
     public String getAddMovieToList(String listId){ return "/list/" + listId + "/add_item"; }
 
-    public String getClearList(String listId){ return "/list/" + listId + "/clear"; }
-
-    public String getListDetails(String listId){ return "/list/" + listId; }
 }

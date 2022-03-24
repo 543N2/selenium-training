@@ -41,24 +41,12 @@ public class ListByAll extends List {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public String getLanguage() {
         return language;
-    }
-
-    public void setLanguage(String language) {
-        this.language = language;
     }
 
     public String getId() {
@@ -69,13 +57,4 @@ public class ListByAll extends List {
         this.id = id;
     }
 
-    @Override
-    public Response getListDetailsRequest(Endpoint endpoint, Session session) {
-        return null;
-    }
-
-    @Override
-    public Response deleteRequest(Endpoint endpoint, Session session) {
-        return null;
-    }
 }

@@ -168,10 +168,11 @@ public class Tests extends Hooks {
     public void addMovieToListAPIAndUI(){
         logger.info("addMovieToListAPIAndUI Test started.");
 
+        // Data entry
         String movieId = "78";
         String movieName = "Blade Runner";
-        String listName = "Challenge List 01";
-        String listDescription = "Challenge Description 01";
+        String listName = "Challenge List 05";
+        String listDescription = "Challenge Description 05";
         String listLanguage = "en";
 
         User user = new User();
